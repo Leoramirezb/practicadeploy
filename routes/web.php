@@ -27,7 +27,7 @@ Route::match(['get', 'post'], '/llibre/new', [LlibreController::class, 'new'])->
 
 Route::get('/llibre/delete/{id}', [LlibreController::class, 'delete'])->name('llibre_delete');
 
-Route::get('/autor/list', [AutorController::class, 'list'])->name('autor_list');
+//Route::get('/autor/list', [AutorController::class, 'list'])->name('autor_list');
 
 Route::get('/autor/edit/{id}', [AutorController::class, 'edit'])->name('autor_edit');
 
