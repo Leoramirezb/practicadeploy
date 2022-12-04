@@ -19,7 +19,7 @@ Route::get('/borrarCookie', [DefaultController::class, 'borrarCookie'])->name('b
 
 Route::get('llibre/list', [LlibreController::class, 'list'])->name('llibre_list');
 
-Route::get('/llibre/edit/{id}', [LlibreController::class, 'edit'])->name('llibre_edit');
+//Route::get('/llibre/edit/{id}', [LlibreController::class, 'edit'])->name('llibre_edit');
 
 Route::match(['get', 'post'], '/llibre/edit', [LlibreController::class, 'edit'])->name('llibre_edit');
 
